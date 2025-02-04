@@ -10,7 +10,7 @@ defmodule TrafficLightsServerTest do
     assert TrafficLightsServer.current_lights(pids) == [:green, :green, :green, :green, :green]
   end
 
-  test "initial :yellow with 1 transition" do
+  test "1 transition for 5 different pids" do
     {:ok, pids} = TrafficLightsServer.start_link([])
     TrafficLightsServer.transition(pids)
 
@@ -23,7 +23,7 @@ defmodule TrafficLightsServerTest do
            ]
   end
 
-  test "initail :red 3 transition" do
+  test "3 transition for 5 different pids" do
     {:ok, pids} = TrafficLightsServer.start_link([])
     TrafficLightsServer.transition(pids)
     TrafficLightsServer.transition(pids)

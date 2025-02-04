@@ -1,6 +1,6 @@
 defmodule TrafficLights do
   @moduledoc """
-  Documentation for `TrafficLights`.
+  This is meant to monitor and transition a single traffic light.
   """
   use GenServer
 

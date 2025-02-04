@@ -1,6 +1,6 @@
 defmodule TrafficLightsServer do
   @moduledoc """
-
+  This is meant to handle 5 different TrackLight GenServers
   """
   use GenServer
 
